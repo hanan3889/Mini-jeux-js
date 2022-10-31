@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Le juste Prix</title>
-    <link rel="stylesheet" href="justeprix.css" />
+    <link rel="stylesheet" href="/justePrix/justeprix.css" />
   </head>
   <body>
     <div>
-      <h1>Le juste prix</h1>
-
+      <img class="bandeau" src="/justePrix/img/justeprix.jpg" />
       <button id="beginGame">Commencer la partie</button>
     </div>
+
     <div>
-      <input type="number" id="userPropal" />
-      <button id="userPropalButom">Go</button>
+      <input type="number" id="userPropalInput" />
+      <button id="userPropalButton">Go</button>
     </div>
+
+    <div id="resultDiv"></div>
+
+    <script src="/justePrix/justeprix.js"></script>
   </body>
-  <script src="justeprix.js"></script>
 </html>

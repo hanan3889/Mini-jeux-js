@@ -13,3 +13,46 @@ body {
   padding: 15px;
   background-color: gold;
 }
+
+.reboursDiv {
+  transition: 0.2;
+  font-size: 15px;
+  display: inline-block;
+  color: white;
+  border-radius: 35px;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.reboursDiv.cool {
+  background-color: green;
+}
+
+.reboursDiv.warning {
+  background-color: orange;
+}
+.reboursDiv.danger {
+  background-color: red;
+  animation: suspens 1s infinite;
+  padding: 7px 15px;
+}
+
+#GamePropalDiv {
+  display: none;
+}
+
+@keyframes suspens {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    font-size: 20px;
+  }
+  33% {
+    transform: rotate(-30deg);
+    font-size: 23px;
+  }
+  66% {
+    transform: rotate(30deg);
+    font-size: 23px;
+  }
+}

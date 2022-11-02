@@ -6,20 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Le juste Prix</title>
     <link rel="stylesheet" href="/justePrix/justeprix.css" />
+    <link rel="stylesheet" href="../lib/confetti.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
   </head>
   <body>
     <div>
       <img class="bandeau" src="/justePrix/img/justeprix.jpg" />
-      <button id="beginGame">Commencer la partie</button>
+      <button id="beginGame"><i class="fa-solid fa-play"></i></button>
     </div>
 
-    <div>
+    <div id="GamePropalDiv">
       <input type="number" id="userPropalInput" />
       <button id="userPropalButton">Go</button>
     </div>
 
     <div id="resultDiv"></div>
 
-    <script src="/justePrix/justeprix.js"></script>
+    <div id="compteARebours" class="reboursDiv"></div>
+
+    <script type="module" src="/justePrix/justeprix.js"></script>
   </body>
 </html>
